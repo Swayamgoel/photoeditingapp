@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Upscaler</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="editor-container">
+        <h1>Photo Upscaler</h1>
+        <div class="editor">
+            <div class="controls">
+                <div class="filters">
+                    <h3>Filters</h3>
+                    <button id="brightness">Brightness</button>
+                    <button id="saturation">Saturation</button>
+                    <button id="inversion">Inversion</button>
+                    <button id="grayscale">Grayscale</button>
+                    <input type="range" id="filter-slider" min="0" max="200" value="100">
+                </div>
+                <div class="rotate-flip">
+                    <h3>Rotate & Flip</h3>
+                    <button id="rotate-left">⟲</button>
+                    <button id="rotate-right">⟳</button>
+                    <button id="flip-horizontal">⇆</button>
+                    <button id="flip-vertical">⇵</button>
+                </div>
+                <button id="reset-filters">Reset Filters</button>
+            </div>
+            <div class="preview">
+                <img id="image" src="previewimg.png" alt="Preview Image">
+                <input type="file" id="file-input" accept="image/*">
+                <button id="save-image">Save Image</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
